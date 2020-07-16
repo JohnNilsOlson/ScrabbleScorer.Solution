@@ -1,3 +1,6 @@
+//using System;
+using System.Text.RegularExpressions;
+
 namespace ScrabbleScorer.Models
 {
   public class ScrabbleScore
@@ -7,6 +10,18 @@ namespace ScrabbleScorer.Models
     public ScrabbleScore(string input)
     {
       Input = input;
+    }
+
+    public bool IsValid()
+    {
+      // if (Regex.IsMatch(Input, "^[a-zA-Z]*$"))
+      // {
+      //   return true;
+      // }
+      // else
+      // {
+        return false;
+      // }
     }
   }
 }

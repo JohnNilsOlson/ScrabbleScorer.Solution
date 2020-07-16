@@ -12,5 +12,12 @@ namespace ScrabbleScorer.Tests
       ScrabbleScore newScrabbleScore = new ScrabbleScore("scrabble");
       Assert.AreEqual(typeof(ScrabbleScore), newScrabbleScore.GetType());
     }
+
+    [TestMethod]
+    public void IsValid_ChecksIfInputIsValid_True()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("SCRABBLE");
+      Assert.AreEqual(true, newScrabbleScore.IsValid());
+    }
   }
 }
