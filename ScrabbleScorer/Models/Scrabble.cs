@@ -57,6 +57,10 @@ namespace ScrabbleScorer.Models
         {
           Score += 5;
         }
+        else if (Regex.IsMatch(char.ToString(element), "(j|x)"))
+        {
+          Score += 8;
+        }
       }
     }
   }
