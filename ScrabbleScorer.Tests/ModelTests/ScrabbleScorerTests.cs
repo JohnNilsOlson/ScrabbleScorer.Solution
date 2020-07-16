@@ -39,7 +39,7 @@ namespace ScrabbleScorer.Tests
     public void ToLowerArray_BreakWordIntoLetterArray_Match()
     {
       ScrabbleScore newScrabbleScore = new ScrabbleScore("SCRABBLE");
-      string[] expectedArray = { "s", "c", "r", "a", "b", "b", "l", "e" };
+      char[] expectedArray = { 's', 'c', 'r', 'a', 'b', 'b', 'l', 'e' };
       CollectionAssert.AreEqual(expectedArray, newScrabbleScore.ToLowerArray());
     }
   }

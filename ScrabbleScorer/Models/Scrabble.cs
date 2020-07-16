@@ -24,10 +24,10 @@ namespace ScrabbleScorer.Models
       }
     }
 
-    public string[] ToLowerArray()
+    public char[] ToLowerArray()
     {
-      string[] dummy = { "d" };
-      return dummy;
+      char[] letterArray = Input.ToLower().ToCharArray();
+      return letterArray;
     }
   }
 }
