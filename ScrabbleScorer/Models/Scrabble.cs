@@ -53,6 +53,10 @@ namespace ScrabbleScorer.Models
         {
           Score += 4;
         }
+        else if (char.ToString(element) == "k")
+        {
+          Score += 5;
+        }
       }
     }
   }
