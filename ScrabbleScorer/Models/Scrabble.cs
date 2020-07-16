@@ -41,6 +41,10 @@ namespace ScrabbleScorer.Models
         {
           Score += 1;
         } 
+        else if (Regex.IsMatch(char.ToString(element), "(d|g)"))
+        {
+          Score += 2;
+        }
       }
     }
   }
