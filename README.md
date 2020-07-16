@@ -1,17 +1,27 @@
-# _{Application Name}_
+# _Scrabble Scorer_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An App to score a scrabble word, 7.16.20_
 
-#### By _**Micheal Hansen**_
+#### By _**Micheal Hansen, Tyson Lackey and JohnNils Olson**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_A console app that determines what a word is worth._
 
 ## Specifications
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
+| Instance of ScrabbleScore object created with score of 0 and word = user entered string | "SCRABBLE" | "Score = 0", "UserWord = 'scrabble'" |
+| User Entered string must contain only alphabetic characters (a-zA-Z) | "cl0wns!" | "Please enter a valid word" |
+| User Entered word is broken into an array of lower case letters | "SCRABBLE" | {"s","c","r","a","b","b","l","e"} |
+| Letters (a,e,i,o,u,l,n,r,s,t) increase score by 1 | {"l","i","n","e"} | Score: 4 |
+| Letters (d,g) increase score by 2 | {"d","o","g"} | Score: 5 |
+| Letters (b,c,m,p) increase score by 3 | {"b","c","m","p"} | Score: 12 |
+| Letters (f,h,v,w,y) increase score by 4 | {"f","h","v","w","y"} | Score: 20 |
+| Letters (k) increase score by 5 | {"k"} | Score: 5 |
+| Letters (j,x) increase score by 8 | {"j","k"} | Score: 16 |
+| Letters (q,z) increase score by 10 | {"q","z"} | Score: 20 |
 
 
 ## Setup/Installation Requirements
@@ -34,7 +44,7 @@ Running the program:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_None currently known_
 
 ## Support and contact details
 
@@ -47,7 +57,7 @@ _Please reach out through my GitHub account._
 
 ### License
 
-Copyright (c) 2020 **_Micheal Hansen_**
+Copyright (c) 2020 **_Micheal Hansen, Tyson Lackey, and JohnNils Olson_**
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
