@@ -47,9 +47,16 @@ namespace ScrabbleScorer.Tests
     public void ScoreCounter_IncreaseScoreBy1ForAEIOULNRST_Match()
     {
       ScrabbleScore newScrabbleScore = new ScrabbleScore("line");
-      // newScrabbleScore.ToLowerArray();
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(4, newScrabbleScore.Score);
+    }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy2ForDG_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("dog");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(5, newScrabbleScore.Score);
     }
   }
 }
