@@ -34,5 +34,13 @@ namespace ScrabbleScorer.Tests
       ScrabbleScore badScrabbleScore = new ScrabbleScore("cl0wns!!");
       Assert.AreEqual(false, badScrabbleScore.IsValid());
     }
+
+    [TestMethod]
+    public void ToLowerArray_BreakWordIntoLetterArray_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("SCRABBLE");
+      string[] expectedArray = { "s", "c", "r", "a", "b", "b", "l", "e" };
+      CollectionAssert.AreEqual(expectedArray, newScrabbleScore.ToLowerArray());
+    }
   }
 }

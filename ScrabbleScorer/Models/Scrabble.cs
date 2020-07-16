@@ -23,5 +23,11 @@ namespace ScrabbleScorer.Models
         return false;
       }
     }
+
+    public string[] ToLowerArray()
+    {
+      string[] dummy = { "d" };
+      return dummy;
+    }
   }
 }
