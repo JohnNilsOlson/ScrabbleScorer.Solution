@@ -6,14 +6,6 @@ namespace ScrabbleScorer.Tests
   [TestClass]
   public class ScrabbleScoreTests
   {
-    // ScrabbleScore newScrabbleScore;
-
-    // [TestInitialize]
-    // public void TestInitialize()
-    // {
-    //   ScrabbleScore newScrabbleScore = new ScrabbleScore("scrabble");
-    // }
-
     [TestMethod]
     public void ScrabbleScore_CreatesInstanceOfScrabbleScore_ScrabbleScore()
     {
