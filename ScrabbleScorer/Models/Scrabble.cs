@@ -14,14 +14,14 @@ namespace ScrabbleScorer.Models
 
     public bool IsValid()
     {
-      // if (Regex.IsMatch(Input, "^[a-zA-Z]*$"))
-      // {
-      //   return true;
-      // }
-      // else
-      // {
+      if (Regex.IsMatch(Input, "^[a-zA-Z]*$"))
+      {
+        return true;
+      }
+      else
+      {
         return false;
-      // }
+      }
     }
   }
 }
