@@ -76,11 +76,19 @@ namespace ScrabbleScorer.Tests
     }
 
     [TestMethod]
-    public void ScoreCounter_IncreaseScoreBy4ForK_Match()
+    public void ScoreCounter_IncreaseScoreBy5ForK_Match()
     {
       ScrabbleScore newScrabbleScore = new ScrabbleScore("k");
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(5, newScrabbleScore.Score);
+    }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy8ForJX_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("jx");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(16, newScrabbleScore.Score);
     }
   }
 }

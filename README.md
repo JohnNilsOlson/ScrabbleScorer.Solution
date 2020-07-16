@@ -20,7 +20,7 @@ _A console app that determines what a word is worth._
 | Letters (b,c,m,p) increase score by 3 | {"b","c","m","p"} | Score: 12 |
 | Letters (f,h,v,w,y) increase score by 4 | {"f","h","v","w","y"} | Score: 20 |
 | Letters (k) increase score by 5 | {"k"} | Score: 5 |
-| Letters (j,x) increase score by 8 | {"j","k"} | Score: 16 |
+| Letters (j,x) increase score by 8 | {"j","x"} | Score: 16 |
 | Letters (q,z) increase score by 10 | {"q","z"} | Score: 20 |
 
 
