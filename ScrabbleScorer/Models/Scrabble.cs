@@ -61,6 +61,10 @@ namespace ScrabbleScorer.Models
         {
           Score += 8;
         }
+        else if (Regex.IsMatch(char.ToString(element), "(q|z)"))
+        {
+          Score += 10;
+        }
       }
     }
   }
