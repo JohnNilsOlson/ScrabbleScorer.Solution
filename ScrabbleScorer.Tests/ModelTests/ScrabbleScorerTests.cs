@@ -74,5 +74,13 @@ namespace ScrabbleScorer.Tests
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(20, newScrabbleScore.Score);
     }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy4ForK_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("k");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(5, newScrabbleScore.Score);
+    }
   }
 }
