@@ -58,5 +58,13 @@ namespace ScrabbleScorer.Tests
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(5, newScrabbleScore.Score);
     }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy3ForBCMP_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("bcmp");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(12, newScrabbleScore.Score);
+    }
   }
 }
