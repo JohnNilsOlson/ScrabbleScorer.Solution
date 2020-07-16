@@ -12,7 +12,7 @@ _A console app that determines what a word is worth._
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
-| Instance of ScrabbleScore object created with score of 0 and word = user entered string | "SCRABBLE" | "Score = 0", "UserWord = 'scrabble'" |
+| Instance of ScrabbleScore object created with score of 0 and word = user entered string | "SCRABBLE" | "Score = 0", "UserWord = 'SCRABBLE'" |
 | User Entered string must contain only alphabetic characters (a-zA-Z) | "cl0wns!" | "Please enter a valid word" |
 | User Entered word is broken into an array of lower case letters | "SCRABBLE" | {"s","c","r","a","b","b","l","e"} |
 | Letters (a,e,i,o,u,l,n,r,s,t) increase score by 1 | {"l","i","n","e"} | Score: 4 |
