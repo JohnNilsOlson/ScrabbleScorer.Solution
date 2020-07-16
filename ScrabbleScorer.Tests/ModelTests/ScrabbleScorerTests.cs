@@ -90,5 +90,13 @@ namespace ScrabbleScorer.Tests
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(16, newScrabbleScore.Score);
     }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy10ForQZ_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("qz");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(20, newScrabbleScore.Score);
+    }
   }
 }
