@@ -42,5 +42,14 @@ namespace ScrabbleScorer.Tests
       char[] expectedArray = { 's', 'c', 'r', 'a', 'b', 'b', 'l', 'e' };
       CollectionAssert.AreEqual(expectedArray, newScrabbleScore.ToLowerArray());
     }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy1ForAEIOULNRST_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("line");
+      // newScrabbleScore.ToLowerArray();
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(4, newScrabbleScore.Score);
+    }
   }
 }

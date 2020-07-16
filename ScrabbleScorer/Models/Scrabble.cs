@@ -6,10 +6,12 @@ namespace ScrabbleScorer.Models
   public class ScrabbleScore
   {
     public string Input { get; set; }
+    public int Score { get; set; }
 
     public ScrabbleScore(string input)
     {
       Input = input;
+      Score = 0;
     }
 
     public bool IsValid()
@@ -28,6 +30,18 @@ namespace ScrabbleScorer.Models
     {
       char[] letterArray = Input.ToLower().ToCharArray();
       return letterArray;
+    }
+
+    public void ScoreCounter()
+    {
+      char[] LetterArray = ToLowerArray();
+      foreach(char element in LetterArray)
+      {
+        if (Regex.IsMatch(char.ToString(element), "(a|e|i|o|u|l|n|r|s|t)"))
+        {
+          Score += 1;
+        } 
+      }
     }
   }
 }
