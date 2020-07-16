@@ -49,6 +49,10 @@ namespace ScrabbleScorer.Models
         {
           Score += 3;
         }
+        else if (Regex.IsMatch(char.ToString(element), "(f|h|v|w|y)"))
+        {
+          Score += 4;
+        }
       }
     }
   }
