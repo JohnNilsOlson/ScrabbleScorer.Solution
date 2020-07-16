@@ -6,6 +6,14 @@ namespace ScrabbleScorer.Tests
   [TestClass]
   public class ScrabbleScoreTests
   {
+    // ScrabbleScore newScrabbleScore;
+
+    // [TestInitialize]
+    // public void TestInitialize()
+    // {
+    //   ScrabbleScore newScrabbleScore = new ScrabbleScore("scrabble");
+    // }
+
     [TestMethod]
     public void ScrabbleScore_CreatesInstanceOfScrabbleScore_ScrabbleScore()
     {
@@ -18,6 +26,13 @@ namespace ScrabbleScorer.Tests
     {
       ScrabbleScore newScrabbleScore = new ScrabbleScore("SCRABBLE");
       Assert.AreEqual(true, newScrabbleScore.IsValid());
+    }
+
+    [TestMethod]
+    public void IsValid_CheckIfInputIsInvalid_False()
+    {
+      ScrabbleScore badScrabbleScore = new ScrabbleScore("cl0wns!!");
+      Assert.AreEqual(false, badScrabbleScore.IsValid());
     }
   }
 }
