@@ -66,5 +66,13 @@ namespace ScrabbleScorer.Tests
       newScrabbleScore.ScoreCounter();
       Assert.AreEqual(12, newScrabbleScore.Score);
     }
+
+    [TestMethod]
+    public void ScoreCounter_IncreaseScoreBy4ForFHVWY_Match()
+    {
+      ScrabbleScore newScrabbleScore = new ScrabbleScore("fhvwy");
+      newScrabbleScore.ScoreCounter();
+      Assert.AreEqual(20, newScrabbleScore.Score);
+    }
   }
 }
